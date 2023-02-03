@@ -1,0 +1,68 @@
+:root {
+	--header-height: 3rem;
+
+	/* ========== COLOR ========== */
+	--hue-color: 250;
+	--first-color: hsl(var(--hue-color), 69%, 61%);
+	--first-color-second: hsl(var(--hue-color), 69%, 61%);
+	--first-color-alt: hsl(var(--hue-color), 57%, 53%);
+	--first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+	--title-color: hsl(var(--hue-color), 8%, 15%);
+	--text-color: hsl(var(--hue-color), 8%, 45%);
+	--text-color-light: hsl(var(--hue-color), 8%, 65%);
+	--input-color: hsl(var(--hue-color), 70%, 96%);
+	--body-color: hsl(var(--hue-color), 60%, 99%);
+	--container-colo: #fff;
+
+	--main-color: #2a2a2a;
+	--main-background: #faf8f1;
+
+	/* ========== FONT ========== */
+	--body-font: "Montserrat", sans-serif;
+
+	/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
+	--big-font-size: 2rem;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1.125rem;
+	--normal-font-size: 0.95rem;
+	--small-font-size: 0.8rem;
+	--smaller-font-size: 0.75rem;
+
+	--font-medium: 500;
+	--font-semi-bold: 600;
+
+	/* ========== MARGENES ========== */
+	--mb-0-25: 0.25rem;
+	--mb-0-5: 0.5rem;
+	--mb-0-75: 0.75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+
+	/* ========== z-index ========== */
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
+}
+
+$pre-mobile: 479.98px;
+$mobile: 480px;
+$pre-tablet: 767.98px;
+$tablet: 768px;
+$pre-desctop: 1279.98px;
+$desctop: 1280px;
+
+@media screen and (min-width: $tablet) {
+	:root {
+		--big-font-size: 3rem;
+		--h1-font-size: 2.25rem;
+		--h2-font-size: 1.5rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: 0.87rem;
+		--smaller-font-size: 0.81rem;
+	}
+}

@@ -1,0 +1,98 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	color: var(--text-color);
+	background-color: var(--body-color);
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	margin: 0 0 var(--header-height);
+
+	&.is-hidden {
+		overflow: hidden;
+	}
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--title-color);
+	font-weight: var(--font-semi-bold);
+	margin: 0;
+	padding: 0;
+}
+button {
+	color: inherit;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+input {
+	outline: none;
+}
+.section {
+	padding: 2 rem 0 4rem;
+}
+.section__title {
+	font-size: var(--h1-font-size);
+}
+.section__subtitle {
+	display: block;
+	font-size: var(--small-font-size);
+	margin-bottom: var(--mb-3);
+}
+.section__title,
+.section__subtitle {
+	text-align: center;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 var(--mb-1-5);
+	max-width: 768px;
+
+	@media screen and (min-width: $desctop) {
+		max-width: 1280px;
+	}
+}
+
+.grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
