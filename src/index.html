@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- ========== UNICONS ========== -->
-	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ========== UNICONS ========== -->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
 
-	<!-- ========== FONTS ========== -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&family=Montserrat:wght@400;500;600&display=swap"
-		rel="stylesheet" />
+        <!-- ========== FONTS ========== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&family=Montserrat:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
 
-	<!-- ========== CSS/SCSS ========== -->
-	<link rel="stylesheet" href="./sass/index.scss" />
+        <!-- ========== SWIPER ========== -->
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
-    <title>Page title</title>
-    
-  </head>
-  <body>
-    <include src="./partials/header.html"></include>
-	<script type="module" src="./js/index.js"></script>
-  </body>
+        <!-- ========== CSS/SCSS ========== -->
+        <link rel="stylesheet" href="./sass/index.scss" />
+
+        <title>Page title</title>
+    </head>
+
+    <body>
+        <include src="./partials/header.html"></include>
+        <main class="main">
+            <include src="./partials/home.html"></include>
+            <include src="./partials/about.html"></include>
+            <include src="./partials/skills.html"></include>
+            <include src="./partials/qualification.html"></include>
+            <include src="./partials/services.html"></include>
+            <include src="./partials/portfolio.html"></include>
+        </main>
+        <script src="./js/swiper-bundle.min.js"></script>
+        <script type="module" src="./js/index.js"></script>
+    </body>
 </html>
