@@ -2,6 +2,8 @@
 @import "./utils/vars";
 @import "./utils/general";
 
+@import "./components/_dark-light-button";
+@import "./components/scroll";
 @import "./components/header";
 @import "./components/home";
 @import "./components/button";
@@ -10,3 +12,6 @@
 @import "./components/qualification";
 @import "./components/services";
 @import "./components/portfolio";
+@import "./components/project";
+@import "./components/contactme";
+@import "./components/footer";

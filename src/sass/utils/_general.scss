@@ -13,8 +13,13 @@ body {
 	font-size: var(--normal-font-size);
 	margin: 0 0 var(--header-height) 0;
 
-	&.is-hidden {
-		overflow: hidden;
+	&.dark-theme {
+		--first-color-second: hsl(var(--hue-color), 30%, 8%);
+		--title-color: hsl(var(--hue-color), 8%, 95%);
+		--text-color: hsl(var(--hue-color), 8%, 75%);
+		--input-color: hsl(var(--hue-color), 29%, 16%);
+		--body-color: hsl(var(--hue-color), 28%, 12%);
+		--container-color: hsl(var(--hue-color), 29%, 16%);
 	}
 }
 
@@ -50,7 +55,7 @@ input {
 	outline: none;
 }
 .section {
-	padding: 2 rem 0 4rem;
+	padding: 2rem 0 4rem;
 }
 .section__title {
 	font-size: var(--h1-font-size);
